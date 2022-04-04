@@ -1,9 +1,9 @@
 import React from "react";
 import {
 	BrowserRouter as BRouter,
+	Routes,
 	Route,
-	Switch,
-	Redirect,
+	Navigate,
 } from 'react-router-dom';
 import Header from 'Layout/Header';
 import Home from 'Page/Home';
@@ -14,10 +14,10 @@ const RouterSet = () => {
 		<BRouter>
 			<Header />
 			<div id="container">
-				<Switch>
-					<Route path="/" exact component={Home} />
-					<Redirect from="*" to="/" />
-				</Switch>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="*" element={<Navigate to="/" replace />}  />
+				</Routes>
 			</div>
 		</BRouter>
 	);
