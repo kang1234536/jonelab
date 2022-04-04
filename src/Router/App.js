@@ -1,10 +1,12 @@
+import React from 'react';
+import RouterSet from 'Router/RouterSet';
+import GStateProvider from 'Router/GState';
 
-
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			joneLab
-		</div>
+		<GStateProvider>
+			<RouterSet />
+		</GStateProvider>
 	);
 }
 
