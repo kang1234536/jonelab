@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+#root {box-sizing:border-box;position:relative;box-sizing:border-box;height:100%;min-height:100%;height:auto !important;padding:40px 0;}
+
+#header {position:fixed;top:0;left:0;width:100%;}
+
+#footer {position:absolute;bottom:0;left:0;width:100%;}

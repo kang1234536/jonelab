@@ -1,19 +1,20 @@
 import React from 'react';
 
-const Header = () => {
+const Footer = () => {
 	return (
-		<header id="header">
+		<footer id="footer">
 			<div style={{
 				'text-align' : 'center',
 				'font-size' : '20px',
 				'font-weight' : '500',
 				'line-height' : '40px',
-				'background-color' : '#0ff',
+				'background-color' : '#00f',
+				'color' : 'white',
 			}}>
-				HEADER
+				FOOTER AREA
 			</div>
-		</header>
+		</footer>
 	);
 }
 
-export default Header;
+export default Footer;

@@ -6,6 +6,7 @@ import {
 	Navigate,
 } from 'react-router-dom';
 import Header from 'Layout/Header';
+import Footer from 'Layout/Footer';
 import Home from 'Page/Home';
 
 
@@ -19,6 +20,7 @@ const RouterSet = () => {
 					<Route path="*" element={<Navigate to="/" replace />}  />
 				</Routes>
 			</div>
+			<Footer />
 		</BRouter>
 	);
 }
