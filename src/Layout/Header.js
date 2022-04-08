@@ -4,11 +4,11 @@ const Header = () => {
 	return (
 		<header id="header">
 			<div style={{
-				'text-align' : 'center',
-				'font-size' : '20px',
-				'font-weight' : '500',
-				'line-height' : '40px',
-				'background-color' : '#0ff',
+				'textAlign' : 'center',
+				'fontSize' : '20px',
+				'fontWeight' : '500',
+				'lineHeight' : '40px',
+				'backgroundColor' : '#0ff',
 			}}>
 				HEADER
 			</div>

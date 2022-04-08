@@ -2,10 +2,10 @@ const HomePresenter = ()=>{
 	return(
 		<div className="mainConts">
 			<div style={{
-				'text-align' : 'center',
-				'font-size' : '70px',
-				'font-weight' : '500',
-				'line-height' : '200px',
+				'textAlign' : 'center',
+				'fontSize' : '70px',
+				'fontWeight' : '500',
+				'lineHeight' : '200px',
 			}}>
 				MAIN
 			</div>
