@@ -21,10 +21,13 @@ const GnbMenu = ({gnbActive, setGnbActive}) => {
 	useEffect(()=>{
 		const gnbDom = gnbWrapEl.current;
 		const gnbInnerDom = gnbInnerEl.current;
+		console.log(`start gnbActive = ${gnbActive}`);
 
 		if(gnbActive) {
+			console.log(`gnbActive = ${gnbActive}`);
 			
 		}else{
+			console.log(`gnbActive = ${gnbActive}`);
 			
 		}
 
