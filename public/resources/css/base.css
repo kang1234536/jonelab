@@ -10,9 +10,9 @@ ul, ol, li{list-style:none}
 
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; margin:0; padding:0;}
 
-body {font-size:14px; line-height:18px; font-weight:400; color:#333; font-family:'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; -webkit-text-size-adjust: none;}
+body {font-size:14px; line-height:18px; font-weight:400; color:#333; font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; -webkit-text-size-adjust: none;}
 
-pre, textarea, select {font-family:'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;}
+pre, textarea, select {font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;}
 
 fieldset {display:block; margin:0; padding:0; border:0;}
 legend {position:absolute; visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0;}
@@ -20,7 +20,7 @@ form {margin:0; padding:0;}
 
 a, a:link, a:visited, a:active, a:hover {text-decoration:none; color:#333; outline:none;}
 
-input, button {padding:0; margin:0; border:0; font-size:14px; vertical-align:middle; background:none; font-family:'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;-webkit-appearance:none; outline:none;}
+input, button {padding:0; margin:0; border:0; font-size:14px; vertical-align:middle; background:none; font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;-webkit-appearance:none; outline:none;}
 button, label {cursor:pointer;}
 
 select::-ms-expand {display:none;} 
@@ -75,3 +75,4 @@ noscript p {margin:0;}
 .bold4 {font-weight:400 !important;}
 .bold5 {font-weight:500 !important;}
 .bold7 {font-weight:700 !important;}
+.bold8 {font-weight:800 !important;}

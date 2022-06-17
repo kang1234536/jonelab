@@ -8,6 +8,7 @@ import {
 import Header from 'Layout/Header';
 import Footer from 'Layout/Footer';
 import Home from 'Page/Home';
+import Contect from 'Page/Contect';
 
 
 const RouterSet = () => {
@@ -17,6 +18,7 @@ const RouterSet = () => {
 			<div id="container">
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/contect" element={<Contect />} />
 					<Route path="*" element={<Navigate to="/" replace />}  />
 				</Routes>
 			</div>
