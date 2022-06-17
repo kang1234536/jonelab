@@ -12,6 +12,7 @@
 #header .btnGnbMenu.active:before {transition-timing-function:ease;transform:translate(-50%, 0) rotate(45deg);transform-origin:50% 50%;}
 #header .btnGnbMenu.active:after {transition-timing-function:ease;transform:translate(-50%, 0) rotate(-45deg);transform-origin:50% 50%;}
 
-.gnbWrap {position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);}
+.gnbWrap {display:none;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);opacity:0;}
+.gnbWrap .gnbInner {position:absolute;right:-100%;top:0;bottom:0;width:50%;}
 
 #footer {position:absolute;bottom:0;left:0;width:100%;z-index:50;}
