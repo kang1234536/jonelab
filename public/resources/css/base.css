@@ -5,22 +5,22 @@
 *****************************/
 html, body {height:100%;}
 html, body, blockquote, caption, dd, div, dl, dt, fieldset, form, frame, h1, h2, h3, h4, h5, h6, hr,
-iframe, input, legend, li, object, ol, p, pre, q, select, table, textarea, ul, tr, td{ margin:0; padding:0}
+iframe, input, legend, li, object, ol, p, pre, q, select, table, textarea, ul, tr, td{ margin:0;padding:0}
 ul, ol, li{list-style:none}
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; margin:0; padding:0;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;margin:0;padding:0;}
 
-body {font-size:14px; line-height:18px; font-weight:400; color:#333; font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif; -webkit-text-size-adjust: none;}
+body {font-size:24px;line-height:28px;font-weight:400;color:#132d40;font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;-webkit-text-size-adjust: none;}
 
 pre, textarea, select {font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;}
 
-fieldset {display:block; margin:0; padding:0; border:0;}
-legend {position:absolute; visibility:hidden; overflow:hidden; width:0; height:0; font-size:0; line-height:0;}
-form {margin:0; padding:0;}
+fieldset {display:block;margin:0;padding:0;border:0;}
+legend {position:absolute;visibility:hidden;overflow:hidden;width:0;height:0;font-size:0;line-height:0;}
+form {margin:0;padding:0;}
 
-a, a:link, a:visited, a:active, a:hover {text-decoration:none; color:#333; outline:none;}
+a, a:link, a:visited, a:active, a:hover {text-decoration:none;color:#132d40;outline:none;}
 
-input, button {padding:0; margin:0; border:0; font-size:14px; vertical-align:middle; background:none; font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;-webkit-appearance:none; outline:none;}
+input, button {padding:0;margin:0;border:0;line-height:28px;color:#132d40;font-size:24px;vertical-align:middle;background:none;font-family:'Poppins', 'NotoSans','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;-webkit-appearance:none;outline:none;}
 button, label {cursor:pointer;}
 
 select::-ms-expand {display:none;} 
@@ -33,7 +33,7 @@ input[type="radio"], input[type="checkbox"] {appearance:none;-webkit-appearance:
 
 input::placeholder {color:#777;}
 
-img {border:0; vertical-align:middle;}
+img {border:0;vertical-align:middle;}
 
 hr {display:none;}
 
@@ -41,13 +41,13 @@ em, address {font-style:normal;}
 
 h1, h2, h3, h4, h5, h6, strong {font-weight:800;}
 
-table {width:100%; border-collapse:collapse;}
-caption {overflow:hidden; margin:0; padding:0; width:0; height:0; font-size:0; line-height:0;}
+table {width:100%;border-collapse:collapse;}
+caption {overflow:hidden;margin:0;padding:0;width:0;height:0;font-size:0;line-height:0;}
 
-noscript {position:absolute; z-index:10; background:#efefef;}
+noscript {position:absolute;z-index:10;background:#efefef;}
 noscript p {margin:0;}
 
-.blind {position:absolute; overflow:hidden; width:0; height:0; font-size:1px; line-height:0; color:transparent;}
+.blind {position:absolute;overflow:hidden;width:0;height:0;font-size:1px;line-height:0;color:transparent;}
 
 /* skip */
 .skip {position:fixed;}
@@ -69,7 +69,7 @@ noscript p {margin:0;}
 .vAlignB{vertical-align:bottom !important}
 
 /* clipping */
-.clipping{white-space:nowrap; text-overflow:ellipsis; overflow:hidden}
+.clipping{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
 
 /* font weight */
 .bold4 {font-weight:400 !important;}

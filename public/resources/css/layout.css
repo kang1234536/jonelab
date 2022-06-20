@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 #root {overflow:hidden;height:100%;min-height:100%;height:auto !important;}
-
+/***********************************************************************************************************************************
+	HEADER
+***********************************************************************************************************************************/
 #header {position:fixed;top:0;left:0;box-sizing:border-box;width:100%;padding:0 80px;z-index:50;}
 #header .headerInner {position:relative;padding:40px 0;}
 #header .logo {display:inline-block;vertical-align:top;}
@@ -12,7 +14,23 @@
 #header .btnGnbMenu.active:before {transition-timing-function:ease;transform:translate(-50%, 0) rotate(45deg);transform-origin:50% 50%;}
 #header .btnGnbMenu.active:after {transition-timing-function:ease;transform:translate(-50%, 0) rotate(-45deg);transform-origin:50% 50%;}
 
-.gnbWrap {display:none;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);opacity:0;}
-.gnbWrap .gnbInner {position:absolute;right:-100%;top:0;bottom:0;width:50%;}
+/***********************************************************************************************************************************
+	GNB
+***********************************************************************************************************************************/
+.gnbWrap {visibility:hidden;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);}
+.gnbWrap .gnbInner {position:absolute;right:-100%;top:0;bottom:0;box-sizing:border-box;width:50%;padding:124px 0 0 80px;background-color:#fff;transition:right 1s ease;}
+.gnbWrap .gnbInner > ul li {margin:20px 0 0;}
+.gnbWrap .gnbInner > ul li:first-child {margin:0;}
+.gnbWrap .gnbInner > ul li .menuItem {display:inline-block;line-height:72px;color:#132d40;font-size:48px;font-weight:500;}
+.gnbWrap .gnbInner .util {margin:20px 0 0;}
+.gnbWrap .gnbInner .util:first-child {margin:0;}
+.gnbWrap .gnbInner .util .btnBizDown {display:inline-block;line-height:36px;}
+.gnbWrap.active {visibility:visible;}
+.gnbWrap.active .gnbInner {right:0;}
 
-#footer {position:absolute;bottom:0;left:0;width:100%;z-index:50;}
+/* #container {padding:108px 0 0;} */
+
+/***********************************************************************************************************************************
+	FOOTER
+***********************************************************************************************************************************/
+#footer {}
