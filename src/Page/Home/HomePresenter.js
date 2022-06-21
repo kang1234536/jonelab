@@ -5,22 +5,18 @@ const HomePresenter = ()=>{
 	const [observeEl, setObserveEl] = useState([]);
 	const options = {
 		rootMargin : '10px',
-		threshold:1
+		threshold:0.9
 	}
 	const callback = function(entries, observer) {
 		entries.forEach(function(entry) {
 			if (entry.isIntersecting) {
-				// console.log('화면에서 노출됨');
 				entry.target.classList.add('active');
 				observer.unobserve(entry.target);
-			} else {
-				// console.log('화면에서 제외됨');
-				//entry.target.classList.remove('active');
 			}
 		});
 	}
-	// const observer = new IntersectionObserver(callback, options);
-	const observer = useMemo(() => new IntersectionObserver(callback,options), []);
+	const observer = new IntersectionObserver(callback, options);
+	// const observer = useMemo(() => new IntersectionObserver(callback,options), []);
 
 	useEffect(()=>{
 		if(observeEl.length) {
@@ -37,19 +33,29 @@ const HomePresenter = ()=>{
 	return(
 		<div className="contents">
 			{/* S : intro */}
-			<IntroSection setObserveEl = {setObserveEl} />
+			<IntroSection
+				setObserveEl = {setObserveEl}
+			/>
 			{/* E : intro */}
 			{/* S : intro */}
-			<IntroSection setObserveEl = {setObserveEl} />
+			<IntroSection
+				setObserveEl = {setObserveEl}
+			/>
 			{/* E : intro */}
 			{/* S : intro */}
-			<IntroSection setObserveEl = {setObserveEl} />
+			<IntroSection
+				setObserveEl = {setObserveEl}
+			/>
 			{/* E : intro */}
 			{/* S : intro */}
-			<IntroSection setObserveEl = {setObserveEl} />
+			<IntroSection
+				setObserveEl = {setObserveEl}
+			/>
 			{/* E : intro */}
 			{/* S : intro */}
-			<IntroSection setObserveEl = {setObserveEl} />
+			<IntroSection
+				setObserveEl = {setObserveEl}
+			/>
 			{/* E : intro */}
 		</div>
 	);

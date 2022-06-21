@@ -1,36 +1,21 @@
-import React, { useRef, useEffect, useState, useMemo } from 'react'; 
+import React, { useRef, useEffect, useState } from 'react'; 
 import PropTypes from 'prop-types';
 
 const IntroSection = ({setObserveEl})=>{
 	const [loopIdx, setLoopIdx] = useState(null);
 	const introWrap = useRef(null);
 	let winH = window.innerHeight;
-	let setTimeAni;
 
-	const aniLoopFn = useMemo(()=> {
-		console.log(loopIdx);
-		if(loopIdx == null) {
-			setLoopIdx((loopIdx)=>0);
-		} else if(loopIdx >= 0) {		
-			loopIdx + 1 > 3 ? setLoopIdx((loopIdx)=>0) : setLoopIdx((loopIdx)=>loopIdx+1);
-		}
-		setTimeAni = setTimeout(aniLoopFn, 1000);
-	}, []);
 
 	useEffect(()=> {
-		// setTimeAni = setTimeout(aniLoopFn, 100);
-		setLoopIdx((loopIdx)=>0);
-		console.log(loopIdx);
-		console.log(loopIdx === 0);
-
 		introWrap.current.style.height = winH + 'px';
-		setObserveEl((observeEl)=>[...observeEl, introWrap.current]);
-
-		return ()=>{
-			clearTimeout(setTimeAni);
-		}
-
-	}, [introWrap]);
+		setObserveEl((observeEl)=>{
+			if(observeEl.indexOf(introWrap.current) > 0) {
+				observeEl.splice(observeEl.indexOf(introWrap.current), 0);
+			}
+			return [...observeEl, introWrap.current];
+		});
+	}, [loopIdx]);
 
 	return(
 		<div className={'mainIntroWrap'} ref={introWrap}>
