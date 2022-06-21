@@ -4,4 +4,6 @@
 	MAIN
 ***********************************************************************************************************************************/
 /* intro */
-.mainIntroWrap {background:#fafafa url('/resources/images/bg_main_intro.svg') no-repeat center;}
+.mainIntroWrap {position:relative;background:#fafafa url('/resources/images/bg_main_intro.svg') no-repeat center;}
+.mainIntroWrap .unit {visibility:hidden;position:absolute;left:50%;top:50%;font-size:96px;font-weight:700;transform:translate(-50%, -50%) scale(2);transition:transform 1s ease;}
+.mainIntroWrap .unit.active {visibility:visible;transform:translate(-50%, -50%) scale(1);}
