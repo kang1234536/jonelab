@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import IntroSection from "./IntroSection";
 import CompanySection from "./CompanySection";
 
@@ -17,7 +17,6 @@ const HomePresenter = ()=>{
 		});
 	}
 	const observer = new IntersectionObserver(callback, options);
-	// const observer = useMemo(() => new IntersectionObserver(callback,options), []);
 
 	useEffect(()=>{
 		if(observeEl.length) {
