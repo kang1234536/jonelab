@@ -7,7 +7,18 @@
 [class^="mainIntroWrap"] {position:relative;background:#fafafa url('/resources/images/common/bg_main_intro.svg') no-repeat center;}
 [class^="mainIntroWrap"] .unit {visibility:hidden;position:absolute;left:50%;top:50%;line-height:100px;font-size:96px;font-weight:700;white-space:nowrap;transform:translate(-50%, -50%) scale(3);opacity:0;transition:transform 1.5s ease, opacity 2.5s ease;}
 [class^="mainIntroWrap"] .unit.active {visibility:visible;transform:translate(-50%, -50%) scale(1);opacity:1;}
-[class^="mainIntroWrap"] .btnScroll {width:24px;height:24px;background:#fafafa url('/resources/images/common/ico_scroll.svg') no-repeat center;}
+[class^="mainIntroWrap"] .btnScroll {position:absolute;left:50%;bottom:50px;box-sizing:border-box;width:50px;height:50px;padding:13px 0 0;text-align:center;transform:translate(-50%, 0);}
+[class^="mainIntroWrap"] .btnScroll span {display:inline-block;width:25px;height:25px;background:#fafafa url('/resources/images/common/ico_scroll.svg') no-repeat center;}
+[class^="mainIntroWrap"] .btnScroll:hover {animation-name:icoMainScroll;animation-duration:3s;animation-iteration-count: infinite;animation-timing-function:linear;}
+@keyframes icoMainScroll {
+	0% {padding:13px 0 0;}
+	15% {padding:25px 0 0;}
+	30% {padding:13px 0 0;}
+	45% {padding:25px 0 0;}
+	60% {padding:13px 0 0;}
+	75% {padding:25px 0 0;}
+	100% {padding:13px 0 0;}
+}
 
 /* Company */
 [class^="mainCompanyWrap"] {}

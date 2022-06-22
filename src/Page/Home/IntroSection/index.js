@@ -43,7 +43,7 @@ const IntroSection = ({setObserveEl})=>{
 			<span className={'unit'}>User Experience</span>
 			<span className={'unit'}>We're J-one Lab</span>
 
-			<button type="button" className="btnScroll" aria-hidden="true"></button>
+			<button type="button" className="btnScroll" aria-hidden="true"><span></span></button>
 		</div>
 	);
 }
