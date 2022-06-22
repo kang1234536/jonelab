@@ -19,7 +19,7 @@ const Header = () => {
 		<>
 			<header id="header">
 				<div className="headerInner">
-					<Link to="/" className="logo"><img src="/resources/images/logo.png" alt="j-one LAB" /></Link>
+					<Link to="/" className="logo"><img src="/resources/images/common/logo.png" alt="j-one LAB" /></Link>
 					<button type="button" className={gnbActive ? "btnGnbMenu active" : "btnGnbMenu"} onClick={gnbOpenFnc} aria-expanded={gnbActive ? "true" : "false"}></button>
 				</div>
 				<GnbMenu

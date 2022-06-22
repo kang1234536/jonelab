@@ -8,18 +8,15 @@ const IntroSection = ({setObserveEl})=>{
 	let loopIdx = 0;
 	const loopFn = ()=>{
 		var unitEl = introWrap.current.querySelectorAll('.mainIntroWrap .unit');
-		console.log(unitEl);
 		var animateFn = ()=>{
 			unitEl.forEach((el)=>{
-				console.log(el);
 				el.classList.remove('active');
 			});
 			unitEl[loopIdx].classList.add('active');
 			loopIdx = loopIdx + 1 > 3 ? 0 : loopIdx + 1
 		}
-		
-		timer = setTimeout(loopFn, 2200);
 
+		timer = setTimeout(loopFn, 2500);
 		animateFn();
 	}
 
@@ -36,9 +33,7 @@ const IntroSection = ({setObserveEl})=>{
 
 		timer = setTimeout(loopFn, 500);
 
-		return ()=>{
-			if(timer) clearTimeout(timer);
-		}
+		return ()=>clearTimeout(timer);
 	}, []);
 
 	return(
@@ -47,6 +42,8 @@ const IntroSection = ({setObserveEl})=>{
 			<span className={'unit'}>Interactive</span>
 			<span className={'unit'}>User Experience</span>
 			<span className={'unit'}>We're J-one Lab</span>
+
+			<button type="button" className="btnScroll" aria-hidden="true"></button>
 		</div>
 	);
 }
