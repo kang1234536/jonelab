@@ -1,10 +1,27 @@
-import React, { useRef, useEffect, useState } from 'react'; 
+import React, { useRef, useEffect } from 'react'; 
 import PropTypes from 'prop-types';
 
 const IntroSection = ({setObserveEl})=>{
-	const [loopIdx, setLoopIdx] = useState(0);
 	const introWrap = useRef(null);
 	let winH = window.innerHeight;
+	let timer;
+	let loopIdx = 0;
+	const loopFn = ()=>{
+		var unitEl = introWrap.current.querySelectorAll('.mainIntroWrap .unit');
+		console.log(unitEl);
+		var animateFn = ()=>{
+			unitEl.forEach((el)=>{
+				console.log(el);
+				el.classList.remove('active');
+			});
+			unitEl[loopIdx].classList.add('active');
+			loopIdx = loopIdx + 1 > 3 ? 0 : loopIdx + 1
+		}
+		
+		timer = setTimeout(loopFn, 2200);
+
+		animateFn();
+	}
 
 
 	useEffect(()=> {
@@ -16,14 +33,20 @@ const IntroSection = ({setObserveEl})=>{
 			}
 			return [...observeEl, introWrap.current];
 		});
-	}, [loopIdx]);
+
+		timer = setTimeout(loopFn, 500);
+
+		return ()=>{
+			if(timer) clearTimeout(timer);
+		}
+	}, []);
 
 	return(
 		<div className={'mainIntroWrap'} ref={introWrap}>
-			<span className={loopIdx === 1 ? 'unit active' : 'unit'}>Creative</span>
-			<span className={loopIdx === 2 ? 'unit active' : 'unit'}>Interactive</span>
-			<span className={loopIdx === 3 ? 'unit active' : 'unit'}>User Experience</span>
-			<span className={loopIdx === 34 ? 'unit active' : 'unit'}>We're J-one Lab</span>
+			<span className={'unit'}>Creative</span>
+			<span className={'unit'}>Interactive</span>
+			<span className={'unit'}>User Experience</span>
+			<span className={'unit'}>We're J-one Lab</span>
 		</div>
 	);
 }

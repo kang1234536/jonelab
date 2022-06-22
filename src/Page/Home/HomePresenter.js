@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import IntroSection from "./IntroSection";
+import CompanySection from "./CompanySection";
 
 const HomePresenter = ()=>{
 	const [observeEl, setObserveEl] = useState([]);
@@ -37,26 +38,11 @@ const HomePresenter = ()=>{
 				setObserveEl = {setObserveEl}
 			/>
 			{/* E : intro */}
-			{/* S : intro */}
-			<IntroSection
+			{/* S : COMPANY */}
+			<CompanySection
 				setObserveEl = {setObserveEl}
 			/>
-			{/* E : intro */}
-			{/* S : intro */}
-			<IntroSection
-				setObserveEl = {setObserveEl}
-			/>
-			{/* E : intro */}
-			{/* S : intro */}
-			<IntroSection
-				setObserveEl = {setObserveEl}
-			/>
-			{/* E : intro */}
-			{/* S : intro */}
-			<IntroSection
-				setObserveEl = {setObserveEl}
-			/>
-			{/* E : intro */}
+			{/* E : COMPANY */}
 		</div>
 	);
 }

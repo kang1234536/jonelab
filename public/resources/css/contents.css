@@ -5,5 +5,5 @@
 ***********************************************************************************************************************************/
 /* intro */
 .mainIntroWrap {position:relative;background:#fafafa url('/resources/images/bg_main_intro.svg') no-repeat center;}
-.mainIntroWrap .unit {visibility:hidden;position:absolute;left:50%;top:50%;font-size:96px;font-weight:700;transform:translate(-50%, -50%) scale(3);opacity:0;transition:transform 1s ease, opacity 1s ease;}
+.mainIntroWrap .unit {visibility:hidden;position:absolute;left:50%;top:50%;font-size:96px;font-weight:700;transform:translate(-50%, -50%) scale(3);opacity:0;transition:transform 2s ease, opacity 2s ease;}
 .mainIntroWrap .unit.active {visibility:visible;transform:translate(-50%, -50%) scale(1);opacity:1;}
