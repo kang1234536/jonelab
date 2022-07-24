@@ -26,7 +26,11 @@ const HomePresenter = ()=>{
 		}
 
 		return ()=>{
-			if(observeEl.length) observer.unobserve();
+			if(observeEl.length) {
+				observeEl.forEach(function(box) {
+					observer.observe(box);
+				});
+			}
 		}
 	}, [observeEl]);
 

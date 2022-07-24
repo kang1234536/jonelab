@@ -10,15 +10,21 @@
 [class^="mainIntroWrap"] .btnScroll {position:absolute;left:50%;bottom:50px;box-sizing:border-box;width:50px;height:50px;padding:13px 0 0;text-align:center;transform:translate(-50%, 0);}
 [class^="mainIntroWrap"] .btnScroll span {display:inline-block;width:25px;height:25px;background:#fafafa url('/resources/images/common/ico_scroll.svg') no-repeat center;}
 [class^="mainIntroWrap"] .btnScroll:hover {animation-name:icoMainScroll;animation-duration:3s;animation-iteration-count: infinite;animation-timing-function:linear;}
-@keyframes icoMainScroll {
-	0% {padding:13px 0 0;}
-	15% {padding:25px 0 0;}
-	30% {padding:13px 0 0;}
-	45% {padding:25px 0 0;}
-	60% {padding:13px 0 0;}
-	75% {padding:25px 0 0;}
-	100% {padding:13px 0 0;}
-}
 
 /* Company */
-[class^="mainCompanyWrap"] {}
+[class^="mainCompanyWrap"] {padding:80px;}
+[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:48px;line-height:88px;text-align:center;}
+[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox {margin:88px 0 0;text-align:center}
+[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a {display:inline-block;padding:14px 25px;line-height:43px;font-size:33px;color:#fff;border-radius:70px;background-color:#132D40}
+[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a em {display:inline-block;}
+
+[class^="mainCompanyWrap"] .companyIntroBox02 {max-width:1280px;margin:160px auto 0;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li {margin:90px 0 0;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:first-child {margin:0;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:after {display:block;overflow:hidden;content:"";clear:both;width:0;height:0;line-height:0;font-size:0;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem {float:left;box-sizing:border-box;width:50%;padding:0 35px 0 0;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem {float:right;padding:0 0 0 35px;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit {display:block;position:relative;padding:140px 0 0;line-height:98px;font-size:80px;font-weight:700;}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:before {display:block;content:"";position:absolute;left:0;top:0;width:100px;height:100px;border-radius:100%;background-color:rgba(79, 183, 226, 0.3);}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:after {display:block;content:"";position:absolute;left:70px;;top:0;width:100px;height:100px;border-radius:100%;background-color: rgba(19, 45, 64, 0.3);}
+[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .conts {margin:40px 0 0;line-height:34px;font-size:24px;}

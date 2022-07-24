@@ -20,20 +20,21 @@ const IntroSection = ({setObserveEl})=>{
 		animateFn();
 	}
 
+	const resizeFn = ()=> {
+		winH = window.innerHeight;
+		introWrap.current.style.height = winH + 'px';
+	}
+
 
 	useEffect(()=> {
 		introWrap.current.style.height = winH + 'px';
-		setObserveEl((observeEl)=>{
-			var hasEl = observeEl.indexOf(introWrap.current);
-			if(hasEl > 0) {
-				observeEl.splice(hasEl, 0);
-			}
-			return [...observeEl, introWrap.current];
-		});
-
 		timer = setTimeout(loopFn, 500);
-
-		return ()=>clearTimeout(timer);
+		window.addEventListener('resize', resizeFn);
+		
+		return ()=> {
+			clearTimeout(timer);
+			window.removeEventListener('resize', resizeFn);
+		}
 	}, []);
 
 	return(
