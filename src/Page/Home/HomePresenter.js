@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import IntroSection from "./IntroSection";
 import CompanySection from "./CompanySection";
+import WorkSection01 from "./WorkSection01";
 
 const HomePresenter = ()=>{
 	const [observeEl, setObserveEl] = useState([]);
 	const options = {
 		rootMargin : '10px',
-		threshold:0.9
+		threshold:0.5
 	}
 	const callback = function(entries, observer) {
 		entries.forEach(function(entry) {
@@ -46,6 +47,14 @@ const HomePresenter = ()=>{
 				setObserveEl = {setObserveEl}
 			/>
 			{/* E : COMPANY */}
+
+			{/* S : WORK01 */}
+			<WorkSection01
+				setObserveEl = {setObserveEl}
+			/>
+			{/* E : WORK01 */}
+
+
 		</div>
 	);
 }

@@ -4,16 +4,25 @@ import PropTypes from 'prop-types';
 
 const CompanySection = ({setObserveEl})=>{
 	const companyWrap = useRef(null);
+	const introItem01 = useRef(null);
+	const introItem02 = useRef(null);
+	const introItem03 = useRef(null);
+	let introItemArr;
 
 
 	useEffect(()=> {
-		// introWrap.current.style.height = winH + 'px';
+		introItemArr = [introItem01, introItem02, introItem03];
+
 		setObserveEl((observeEl)=>{
-			var hasEl = observeEl.indexOf(companyWrap.current);
-			if(hasEl > 0) {
-				observeEl.splice(hasEl, 0);
-			}
-			return [...observeEl, companyWrap.current];
+			var arrayEl = observeEl;
+			introItemArr.forEach((val)=>{
+				var hasEl = arrayEl.indexOf(val.current);
+				if(hasEl > 0) {
+					arrayEl.splice(hasEl, 0);
+				}
+				arrayEl = [...arrayEl, val.current];
+			});
+			return arrayEl;
 		});
 
 	}, []);
@@ -35,8 +44,8 @@ const CompanySection = ({setObserveEl})=>{
 			<div className={'companyIntroBox02'}>
 				<ul>
 					<li>
-						<div className={'introItem'}>
-							<strong class={'tit'}>ideology</strong>
+						<div className={'introItem'} ref={introItem01}>
+							<strong className={'tit'}><span>ideology</span></strong>
 
 							<div className="conts">
 								사람과 사람을 연결한다는 이념을 바탕으로<br />
@@ -45,8 +54,8 @@ const CompanySection = ({setObserveEl})=>{
 						</div>
 					</li>
 					<li>
-						<div className={'introItem'}>
-							<strong class={'tit'}>service</strong>
+						<div className={'introItem'} ref={introItem02}>
+							<strong className={'tit'}><span>service</span></strong>
 
 							<div className="conts">
 								다양한 리서치를 통하여 추출된 User insight 를<br />
@@ -55,8 +64,8 @@ const CompanySection = ({setObserveEl})=>{
 						</div>
 					</li>
 					<li>
-						<div className={'introItem'}>
-							<strong class={'tit'}>Value</strong>
+						<div className={'introItem'} ref={introItem03}>
+							<strong className={'tit'}><span>Value</span></strong>
 
 							<div className="conts">
 							기업의 니즈에 적합하도록 전문적이고 체계적인 운영을 통해<br />
