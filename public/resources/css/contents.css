@@ -36,3 +36,6 @@
 
 /* Work01 */
 [class^="mainWorkWrap"] {padding:80px;}
+[class^="mainWorkWrap"] [class^="titBox"] .tit {display:block;font-size:48px;line-height:58px;}
+[class^="mainWorkWrap"] [class^="historyListWrap"] {margin:80px 0 0;}
+[class^="mainWorkWrap"] [class^="historyListWrap"]:first-child {margin:0;}
