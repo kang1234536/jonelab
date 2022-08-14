@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import IntroSection from "./IntroSection";
 import CompanySection from "./CompanySection";
 import WorkSection01 from "./WorkSection01";
+import WorkSection02 from "./WorkSection02";
 
 const HomePresenter = ()=>{
 	const [observeEl, setObserveEl] = useState([]);
@@ -53,6 +54,12 @@ const HomePresenter = ()=>{
 				setObserveEl = {setObserveEl}
 			/>
 			{/* E : WORK01 */}
+
+			{/* S : WORK02 */}
+			<WorkSection02
+				setObserveEl = {setObserveEl}
+			/>
+			{/* E : WORK02 */}
 
 
 		</div>

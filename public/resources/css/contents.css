@@ -41,11 +41,20 @@
 [class^="mainWorkWrap"] [class^="historyListWrap"]:first-child {margin:0;}
 [class^="mainWorkWrap"] [class^="historyListWrap"] > ul > li {margin:160px 0 0;}
 [class^="mainWorkWrap"] [class^="historyListWrap"] > ul > li:first-child {margin:0;}
+[class^="mainWorkWrap"] .historyListWrap02 {margin:0 -1% 0 0;}
+[class^="mainWorkWrap"] .historyListWrap02 > ul {display:flex;flex-wrap:wrap;margin:-80px -4px 0 0;}
+[class^="mainWorkWrap"] .historyListWrap02 > ul > li {box-sizing:border-box;width:33%;padding:0 4px 0 0;margin:80px 0 0;}
+[class^="mainWorkWrap"] .historyListWrap02 > ul > li:first-child {margin:80px 0 0;}
 
 [class^="mainWorkWrap"] [class^="histroyCardBox"] {display:block;}
-[class^="mainWorkWrap"] [class^="histroyCardBox"] .img {display:block;margin:0 0 80px;}
+[class^="mainWorkWrap"] [class^="histroyCardBox"] .img {display:block;margin:0 0 40px;text-align:center;background-position:center;background-repeat:no-repeat;background-size:contain;}
+[class^="mainWorkWrap"] [class^="histroyCardBox"] .img img {height:100%;}
+[class^="mainWorkWrap"] [class^="histroyCardBox"] .img:after {display:block;content:"";width:100%;padding:111.1% 0 0;}
 [class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtSummary {line-height:46px;font-size:36px;}
 [class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtName {line-height:58px;font-size:48px;}
 [class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail {margin:10px 0 0;color:#8a8a8a;}
 [class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail li {position:relative;padding:0 0 0 15px;line-height:36px;}
 [class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail li:before {display:block;content:"";position:absolute;left:5px;top:14px;width:5px;height:5px;border-radius:100%;background-color:#8a8a8a;}
+[class^="mainWorkWrap"] .histroyCardBox02 .pjtName {line-height:34px;font-size:24px;}
+[class^="mainWorkWrap"] .histroyCardBox02 .pjtSummary {line-height:34px;font-size:24px;color:#8a8a8a;}
+[class^="mainWorkWrap"] .histroyCardBox02 .pjtPeriod {line-height:34px;font-size:24px;color:#8a8a8a;}
