@@ -1,4 +1,4 @@
 project : joneLab
 
 ## DEV URL
-- https://vocal-centaur-42d3e8.netlify.app/
+- https://62f8bd689cac3400086e9d5a--visionary-blini-d01301.netlify.app/
