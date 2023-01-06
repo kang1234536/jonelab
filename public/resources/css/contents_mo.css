@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/***********************************************************************************************************************************
+	MAIN
+***********************************************************************************************************************************/
+/* 1024 이하 사이즈 반응형 대응 */
+@media(max-width : 1024px) {
+
+/* intro */
+[class^="mainIntroWrap"] {background-size:50vw;}
+[class^="mainIntroWrap"] .unit {line-height:9.2vw;font-size:9vw;}
+
+/* Company */
+[class^="mainCompanyWrap"] {padding:7.8vw;}
+[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:4.49vw;line-height:8.20vw;}
+
+
+}

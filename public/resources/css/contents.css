@@ -13,7 +13,7 @@
 
 /* Company */
 [class^="mainCompanyWrap"] {padding:80px;background-color:#fafafa;}
-[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:48px;line-height:88px;text-align:center;}
+[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:46px;line-height:86px;text-align:center;}
 [class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox {margin:88px 0 0;text-align:center}
 [class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a {display:inline-block;padding:14px 25px;line-height:43px;font-size:33px;color:#fff;border-radius:70px;background-color:#132D40}
 [class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a em {display:inline-block;}
