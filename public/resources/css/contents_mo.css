@@ -6,13 +6,64 @@
 /* 1024 이하 사이즈 반응형 대응 */
 @media(max-width : 1024px) {
 
-/* intro */
-[class^="mainIntroWrap"] {background-size:50vw;}
-[class^="mainIntroWrap"] .unit {line-height:9.2vw;font-size:9vw;}
-
-/* Company */
-[class^="mainCompanyWrap"] {padding:7.8vw;}
-[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:4.49vw;line-height:8.20vw;}
-
+	/* Company */
+	[class^="mainCompanyWrap"] {padding:7.8vw;}
+	[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:4.49vw;line-height:8.20vw;}
 
 }
+/* // 1024 이하 사이즈 반응형 대응 */
+
+/* 960 이하 사이즈 반응형 대응 */
+@media(max-width : 960px) {
+
+	/* intro */
+	[class^="mainIntroWrap"] {background-size:75vw auto;}
+	[class^="mainIntroWrap"] .unit {line-height:10vw;font-size:10.45vw;}
+
+	/* Company */
+	[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox {margin:60px 0 0;}
+	[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a {line-height:24px;font-size:24px;}
+	
+	[class^="mainCompanyWrap"] .companyIntroBox02 {margin:16.6vw 0 0;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li {margin:9.37vw 0 0;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem {width:100%;padding:0;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit {padding:100px 0 0;line-height:10.2vw;font-size:8.3vw;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:before {width:80px;height:80px;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:after {left:50px;width:80px;height:80px;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem.active .conts {margin:4.16vw 20% 0 0;line-height:3.5vw;font-size:2.5vw;}
+	
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem {padding:0;text-align:right;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem .tit:before {left:auto;right:50px;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem .tit:after {left:auto;right:0;}
+	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem.active .conts {margin:4.16vw 0 0 20%;}
+
+	/* Work */
+	[class^="mainWorkWrap"] {padding:8.3vw;}
+	[class^="mainWorkWrap"] [class^="titBox"] .tit {line-height:6vw;font-size:5vw;}
+
+	[class^="mainWorkWrap"] [class^="historyListWrap"] {margin:8.3vw 0 0;}
+	[class^="mainWorkWrap"] [class^="historyListWrap"] > ul > li {margin:16.6vw 0 0;}
+	[class^="mainWorkWrap"] .historyListWrap02 {margin:0 -10px 0 0;}
+	[class^="mainWorkWrap"] .historyListWrap02 > ul {margin:-16.6vw 0 0;}
+	[class^="mainWorkWrap"] .historyListWrap02 > ul > li {width:50%;padding:0 10px 0 0;}
+	[class^="mainWorkWrap"] .historyListWrap02 > ul > li:first-child {margin:16.6vw 0 0;}
+
+
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .img {height:49vw;}
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtSummary {line-height:4.7vw;font-size:3.7vw;}
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtName {margin:5px 0 0;line-height:6vw;font-size:5vw;}
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail {margin:10px 0 0;color:#8a8a8a;}
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail li {position:relative;padding:0 0 0 15px;line-height:3.6vw;font-size:2.5vw;}
+	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtDetail li:before {left:5px;top:1.8vw;width:4px;height:4px;margin:-2px 0 0;}
+	
+}
+/* // 960 이하 사이즈 반응형 대응 */
+
+/* 750 이하 사이즈 반응형 대응 */
+@media(max-width : 960px) {
+
+	[class^="mainWorkWrap"] [class^="historyListWrap"].swiper-container {margin:8.3vw -4vw 0}
+	[class^="mainWorkWrap"] [class^="historyListWrap"].swiper-container > ul.swiper-wrapper > li.swiper-slide {box-sizing:border-box;margin:0;padding:0 2vw;}
+	
+}
+/* 750 이하 사이즈 반응형 대응 */

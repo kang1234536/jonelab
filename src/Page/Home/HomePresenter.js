@@ -50,15 +50,11 @@ const HomePresenter = ()=>{
 			{/* E : COMPANY */}
 
 			{/* S : WORK01 */}
-			<WorkSection01
-				setObserveEl = {setObserveEl}
-			/>
+			<WorkSection01 />
 			{/* E : WORK01 */}
 
 			{/* S : WORK02 */}
-			<WorkSection02
-				setObserveEl = {setObserveEl}
-			/>
+			<WorkSection02 />
 			{/* E : WORK02 */}
 
 

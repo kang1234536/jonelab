@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const WorkSection02 = ({setObserveEl})=>{
+const WorkSection02 = ()=>{
 	const workWrap = useRef(null);
 
 	useEffect(()=> {
@@ -91,8 +91,8 @@ const WorkSection02 = ({setObserveEl})=>{
 	);
 }
 
-WorkSection02.propTypes = {
-	setObserveEl : PropTypes.func.isRequired
-}
+// WorkSection02.propTypes = {
+// 	setObserveEl : PropTypes.func.isRequired
+// }
 
 export default WorkSection02;

@@ -48,7 +48,7 @@ const CompanySection = ({setObserveEl})=>{
 							<strong className={'tit'}><span>ideology</span></strong>
 
 							<div className="conts">
-								사람과 사람을 연결한다는 이념을 바탕으로<br />
+								사람과 사람을 연결한다는 이념을 바탕으로
 								최고의 만남을 위한 공간을 만들기 위해  노력하고 있습니다.
 							</div>
 						</div>
@@ -58,7 +58,7 @@ const CompanySection = ({setObserveEl})=>{
 							<strong className={'tit'}><span>service</span></strong>
 
 							<div className="conts">
-								다양한 리서치를 통하여 추출된 User insight 를<br />
+								다양한 리서치를 통하여 추출된 User insight 를
 								통하여 Key Concept 도출하여  최적의 서비스를 제공합니다.
 							</div>
 						</div>
@@ -68,7 +68,7 @@ const CompanySection = ({setObserveEl})=>{
 							<strong className={'tit'}><span>Value</span></strong>
 
 							<div className="conts">
-							기업의 니즈에 적합하도록 전문적이고 체계적인 운영을 통해<br />
+							기업의 니즈에 적합하도록 전문적이고 체계적인 운영을 통해
 							최적의 브랜드 가치를 함께 만들어갑니다.
 							</div>
 						</div>
