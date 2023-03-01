@@ -4,7 +4,7 @@
 /***********************************************************************************************************************************
 	HEADER
 ***********************************************************************************************************************************/
-#header {position:fixed;top:0;left:0;box-sizing:border-box;width:100%;padding:0 80px;z-index:50;}
+#header {position:fixed;top:0;left:0;box-sizing:border-box;width:100%;padding:0 80px;z-index:100;}
 #header .headerInner {position:relative;padding:40px 0;}
 #header .logo {display:inline-block;vertical-align:top;}
 #header .logo img {width:120px;}
