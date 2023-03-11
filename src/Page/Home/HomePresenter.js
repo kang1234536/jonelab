@@ -3,6 +3,7 @@ import IntroSection from "./IntroSection";
 import CompanySection from "./CompanySection";
 import WorkSection01 from "./WorkSection01";
 import WorkSection02 from "./WorkSection02";
+import HomBottom from "./HomBottom";
 
 const HomePresenter = ()=>{
 	const [observeEl, setObserveEl] = useState([]);
@@ -56,6 +57,10 @@ const HomePresenter = ()=>{
 			{/* S : WORK02 */}
 			<WorkSection02 />
 			{/* E : WORK02 */}
+
+			{/* S : HomBottom */}
+			<HomBottom />
+			{/* E : HomBottom */}
 
 
 		</div>

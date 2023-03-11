@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/***********************************************************************************************************************************
+	HEADER
+***********************************************************************************************************************************/
+/* 1024 이하 사이즈 반응형 대응 */
+@media(max-width : 1024px) {
+
+	#header {padding:0 20px;}
+	#header .headerInner {position:relative;padding:20px 0;}
+
+}
+/* // 1024 이하 사이즈 반응형 대응 */
+
+/* 960 이하 사이즈 반응형 대응 */
+@media(max-width : 960px) {
+
+}
+/* // 960 이하 사이즈 반응형 대응 */
+
+/* 750 이하 사이즈 반응형 대응 */
+@media(max-width : 750px) {
+
+}
+/* 750 이하 사이즈 반응형 대응 */
+
+/***********************************************************************************************************************************
+	GNB
+***********************************************************************************************************************************/
+/* 1024 이하 사이즈 반응형 대응 */
+@media(max-width : 1024px) {
+
+
+}
+/* // 1024 이하 사이즈 반응형 대응 */
+
+/* 960 이하 사이즈 반응형 대응 */
+@media(max-width : 960px) {
+
+	.gnbWrap .gnbInner {width:80%;padding:12.5vw 0 0 8.3vw;}
+	.gnbWrap .gnbInner > ul li {margin:10px 0 0;}
+	.gnbWrap .gnbInner > ul li .menuItem {line-height:7.5vw;font-size:5vw;}
+	.gnbWrap .gnbInner .util {margin:10px 0 0;}
+	.gnbWrap .gnbInner .util .btnBizDown {line-height:3.7vw;font-size:2.4vw}
+
+	/* .gnbWrap {visibility:hidden;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);}
+	.gnbWrap .gnbInner {position:absolute;right:-100%;top:0;bottom:0;box-sizing:border-box;width:50%;padding:124px 0 0 80px;background-color:#fff;transition:right 1s ease;}
+	.gnbWrap .gnbInner > ul li {margin:20px 0 0;}
+	.gnbWrap .gnbInner > ul li:first-child {margin:0;}
+	.gnbWrap .gnbInner > ul li .menuItem {display:inline-block;line-height:72px;color:#132d40;font-size:48px;font-weight:500;}
+	.gnbWrap .gnbInner .util {margin:20px 0 0;}
+	.gnbWrap .gnbInner .util:first-child {margin:0;}
+	.gnbWrap .gnbInner .util .btnBizDown {display:inline-block;line-height:36px;}
+	.gnbWrap.active {visibility:visible;} */
+	/* .gnbWrap.active .gnbInner {right:0;} */
+
+}
+/* // 960 이하 사이즈 반응형 대응 */
+
+/* 750 이하 사이즈 반응형 대응 */
+@media(max-width : 750px) {
+
+}
+/* 750 이하 사이즈 반응형 대응 */
+
+/***********************************************************************************************************************************
+	FOOTER
+***********************************************************************************************************************************/
+/* 1024 이하 사이즈 반응형 대응 */
+@media(max-width : 1024px) {
+
+}
+/* // 1024 이하 사이즈 반응형 대응 */
+
+/* 960 이하 사이즈 반응형 대응 */
+@media(max-width : 960px) {
+	
+}
+/* // 960 이하 사이즈 반응형 대응 */
+
+/* 750 이하 사이즈 반응형 대응 */
+@media(max-width : 750px) {
+
+}
+/* 750 이하 사이즈 반응형 대응 */

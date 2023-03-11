@@ -10,14 +10,16 @@
 	[class^="mainCompanyWrap"] {padding:7.8vw 20px;}
 	[class^="mainCompanyWrap"] .companyIntroBox .companyIntroInner {font-size:4.49vw;line-height:8.20vw;}
 
+	/* home bottom section */
+	.homeContectWrap .contectLink {margin:9vw 0 0;}
+
 }
 /* // 1024 이하 사이즈 반응형 대응 */
 
 /* 960 이하 사이즈 반응형 대응 */
 @media(max-width : 960px) {
 
-	/* layout */
-	.gnbWrap .gnbInner {width:80%;padding:12.5vw 0 0 8.3vw;}
+	[class^="btnItem"], a[class^="btnItem"]{line-height:24px;font-size:24px;}
 
 	/* intro */
 	[class^="mainIntroWrap"] {background-size:75vw auto;}
@@ -25,8 +27,7 @@
 
 	/* Company */
 	[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox {margin:9vw 0 0;}
-	[class^="mainCompanyWrap"] .companyIntroBox .companyLinkBox > a {line-height:24px;font-size:24px;}
-	
+		
 	[class^="mainCompanyWrap"] .companyIntroBox02 {margin:16.6vw 0 0;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li {margin:9.37vw 0 0;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem {width:100%;padding:0;}
@@ -34,7 +35,6 @@
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:before {width:80px;height:80px;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem .tit:after {left:50px;width:80px;height:80px;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li .introItem.active .conts {margin:4.16vw 20% 0 0;line-height:3.5vw;font-size:2.5vw;}
-	
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem {padding:0;text-align:right;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem .tit:before {left:auto;right:50px;}
 	[class^="mainCompanyWrap"] .companyIntroBox02 > ul > li:nth-child(even) .introItem .tit:after {left:auto;right:0;}
@@ -51,7 +51,6 @@
 	[class^="mainWorkWrap"] .historyListWrap02 > ul > li {width:50%;padding:0 10px 0 0;}
 	[class^="mainWorkWrap"] .historyListWrap02 > ul > li:first-child {margin:16.6vw 0 0;}
 
-
 	[class^="mainWorkWrap"] [class^="histroyCardBox"] .img {height:49vw;margin:0 0 4vw;}
 	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtSummary {margin:5px 0 0;line-height:4.7vw;font-size:3.7vw;}
 	[class^="mainWorkWrap"] [class^="histroyCardBox"] .pjtName {margin:5px 0 0;line-height:6vw;font-size:5vw;}
@@ -61,6 +60,9 @@
 	[class^="mainWorkWrap"] .histroyCardBox02 .pjtName {line-height:3.5vw;font-size:2.5vw;}
 	[class^="mainWorkWrap"] .histroyCardBox02 .pjtSummary {line-height:3.5vw;font-size:2.5vw;}
 	[class^="mainWorkWrap"] .histroyCardBox02 .pjtPeriod {line-height:3.5vw;font-size:2.5vw;}
+
+	.homeContectWrap .inner {padding:8.3vw 20px 60px;}
+	.homeContectWrap .descBox [class^="desc"] {line-height:9.1vw;font-size:5vw;}
 	
 }
 /* // 960 이하 사이즈 반응형 대응 */

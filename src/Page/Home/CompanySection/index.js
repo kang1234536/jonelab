@@ -37,7 +37,7 @@ const CompanySection = ({setObserveEl})=>{
 				</div>
 
 				<div className={'companyLinkBox'}>
-					<Link to="/contect"><em>Get in Touch &gt;</em></Link>
+					<Link to="/contect" className={'btnItem'}><em>Get in Touch &gt;</em></Link>
 				</div>
 			</div>
 
