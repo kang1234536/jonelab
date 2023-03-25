@@ -38,7 +38,7 @@ const HomePresenter = ()=>{
 	}, [observeEl]);
 
 	return(
-		<div className="contents">
+		<div className="contents main">
 			{/* S : intro */}
 			<IntroSection
 				setObserveEl = {setObserveEl}

@@ -6,9 +6,6 @@
 /* 1024 이하 사이즈 반응형 대응 */
 @media(max-width : 1024px) {
 
-	#header {padding:0 20px;}
-	#header .headerInner {position:relative;padding:20px 0;}
-
 }
 /* // 1024 이하 사이즈 반응형 대응 */
 
@@ -36,6 +33,11 @@
 
 /* 960 이하 사이즈 반응형 대응 */
 @media(max-width : 960px) {
+	#header {padding:0 20px;}
+	#header .headerInner {position:relative;padding:20px 0;}
+
+	.contents {padding:68px 20px 40px;}
+	.contents.main {padding:0;}
 
 	.gnbWrap .gnbInner {width:80%;padding:12.5vw 0 0 8.3vw;}
 	.gnbWrap .gnbInner > ul li {margin:10px 0 0;}
