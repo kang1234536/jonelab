@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import GnbMenu from 'Layout/GnbMenu';
 
-
 const Header = () => {
-
 	const [gnbActive, setGnbActive] = useState(false);
+
 	//GNB OPEN BUTTON FUNCTION
 	const gnbOpenFnc = (e)=>{
 		if(gnbActive) {

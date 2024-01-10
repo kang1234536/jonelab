@@ -11,6 +11,8 @@ import Contect from 'Page/Contect';
 
 
 const RouterSet = () => {
+
+	console.log('RouterSet =============================== ');
 	return (
 		<BRouter>
 			<Header />
