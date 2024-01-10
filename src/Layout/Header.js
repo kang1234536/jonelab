@@ -5,6 +5,7 @@ import History from 'Router/History';
 
 const Header = () => {
 	const [gnbActive, setGnbActive] = useState(false);
+	const [isBack, setIsBack] = useState(false);
 	
 	//GNB OPEN BUTTON FUNCTION
 	const gnbOpenFnc = (e)=>{
@@ -19,15 +20,21 @@ const Header = () => {
 
 		const histroyEvt = ()=>{
 			console.log('뒤로가기 할 때 수행할 동작을 적는다');
+			setIsBack(true);
 		}
 		const removeHistroyEvt = History.listen(({ action }) => {
+			console.log(action);
 			if (action === "POP") {
 				histroyEvt();
 			}
-
-			console.log('뒤로가기 아님!!!!!!!!!!!!!!!!!');
 		});
-		
+
+		if(!isBack) {
+			window.scrollTo({
+				top : 0,
+				behavior : 'smooth',
+			});
+		}
 		return removeHistroyEvt;
 	});
 
