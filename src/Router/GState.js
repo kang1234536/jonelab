@@ -7,7 +7,7 @@ export const GState = React.createContext(null);
 const GStateProvider = ({ children }) => {
 
 	// 화면 메뉴 1 menu name defualt home
-	const [menu, setMenu] = useState('');
+	const [menu, setMenu] = useState('/');
 	const [companyEl, setCompanyEl] = useState('');
 	const [workEl, setWorkEl] = useState('');
 
