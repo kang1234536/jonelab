@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {GState} from 'Router/GState';
 
 const GnbMenu = ({gnbActive, setGnbActive}) => {
 	const clickDimFnc = (e)=> {
@@ -9,7 +10,6 @@ const GnbMenu = ({gnbActive, setGnbActive}) => {
 		}else{
 			setGnbActive(true);
 		}
-
 	}
 	const clickStopFnc = (e)=> {
 		e.stopPropagation();

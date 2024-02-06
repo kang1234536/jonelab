@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import GnbMenu from 'Layout/GnbMenu';
 import History from 'Router/History';
+import {GState} from 'Router/GState';
+import GnbMenu from 'Layout/GnbMenu';
 
 const Header = () => {
 	const [gnbActive, setGnbActive] = useState(false);
 	const [isBack, setIsBack] = useState(false);
-	
+	const {menu} = useContext(GState);
+
 	//GNB OPEN BUTTON FUNCTION
 	const gnbOpenFnc = (e)=>{
 		if(gnbActive) {
@@ -36,7 +38,7 @@ const Header = () => {
 			});
 		}
 		return removeHistroyEvt;
-	});
+	}, [menu]);
 
 	return (
 		<>

@@ -4,7 +4,7 @@
 const WorkPresenterDefault = ()=>{
 
 	return(
-		<div className={'mainWorkWrap'}>
+		<>
 			<div className='titBox'>
 				<strong className='tit'>Work</strong>
 			</div>
@@ -81,7 +81,7 @@ const WorkPresenterDefault = ()=>{
 				</ul>
 			</div>
 
-		</div>
+		</>
 	);
 }
 

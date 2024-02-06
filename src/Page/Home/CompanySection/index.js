@@ -1,18 +1,20 @@
-import React, { useRef, useEffect } from 'react'; 
+import React, { useRef, useEffect, useContext } from 'react'; 
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {GState} from 'Router/GState';
 
 const CompanySection = ({setObserveEl})=>{
+	const{setCompanyEl} = useContext(GState);
 	const companyWrap = useRef(null);
 	const introItem01 = useRef(null);
 	const introItem02 = useRef(null);
 	const introItem03 = useRef(null);
 	let introItemArr;
 
-
 	useEffect(()=> {
+		setCompanyEl(companyWrap);
 		introItemArr = [introItem01, introItem02, introItem03];
-
+		
 		setObserveEl((observeEl)=>{
 			var arrayEl = observeEl;
 			introItemArr.forEach((val)=>{
@@ -24,6 +26,10 @@ const CompanySection = ({setObserveEl})=>{
 			});
 			return arrayEl;
 		});
+		
+		return () => {
+			setCompanyEl('');
+		}
 
 	}, []);
 

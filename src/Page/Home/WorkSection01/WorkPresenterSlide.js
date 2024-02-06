@@ -1,11 +1,10 @@
-import React, { useRef, useEffect } from 'react'; 
+import React, { useEffect } from 'react'; 
 // import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 import 'swiper/css';
 import Swiper from 'swiper';
 
 const WorkPresenterSlide = ()=>{
-	const workWrap = useRef(null);
 	let workSwiper;
 
 	useEffect(()=> {
@@ -14,7 +13,7 @@ const WorkPresenterSlide = ()=>{
 	
 
 	return(
-		<div className={'mainWorkWrap'} ref={workWrap}>
+		<>
 			<div className='titBox'>
 				<strong className='tit'>Work</strong>
 			</div>
@@ -91,7 +90,7 @@ const WorkPresenterSlide = ()=>{
 				</ul>
 			</div>
 
-		</div>
+		</>
 	);
 }
 
