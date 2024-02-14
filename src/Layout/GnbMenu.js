@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {GState} from 'Router/GState';
 
 const GnbMenu = ({gnbActive, setGnbActive}) => {
+	
+	const {menu} = useContext(GState);
+	
 	const clickDimFnc = (e)=> {
 		if(gnbActive) {
 			setGnbActive(false);
@@ -20,8 +23,8 @@ const GnbMenu = ({gnbActive, setGnbActive}) => {
 			<nav className={gnbActive ? "gnbWrap active" : "gnbWrap"} onClick={clickDimFnc} aria-hidden={gnbActive ? "false" : "true"}>
 				<div className="gnbInner" onClick={clickStopFnc}>
 					<ul>
-						<li><button type="button" className="menuItem" onClick={clickDimFnc}>Company</button></li>
-						<li><button type="button" className="menuItem" onClick={clickDimFnc}>Work</button></li>
+						<li><Link to="/" state={{sectId : 'company'}} className="menuItem" onClick={clickDimFnc}>Company</Link></li>
+						<li><Link to="/" state={{sectId : 'work'}} className="menuItem" onClick={clickDimFnc}>Work</Link></li>
 						<li><Link to="/contect" className="menuItem" onClick={clickDimFnc}>Contect</Link></li>
 					</ul>
 					<div className="util">

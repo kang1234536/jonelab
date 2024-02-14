@@ -8,16 +8,27 @@ const GStateProvider = ({ children }) => {
 
 	// 화면 메뉴 1 menu name defualt home
 	const [menu, setMenu] = useState('/');
-	const [companyEl, setCompanyEl] = useState('');
-	const [workEl, setWorkEl] = useState('');
+
+	// scroll move function
+	const scrollToFn = (opt) => {
+		const options = opt;
+		const scrollX = options.left || 0;
+		const scrollY = options.top || 0;
+		const behavior = options.smooth || 'auto';
+
+		console.log(opt);
+
+		window.scrollTo({
+			top : scrollY,
+			left : scrollX,
+			behavior : behavior,
+		});
+	}
 
 	const value = {
 		menu,
 		setMenu,
-		companyEl,
-		setCompanyEl,
-		workEl,
-		setWorkEl,
+		scrollToFn,
 	};
 
 	useEffect(() => {

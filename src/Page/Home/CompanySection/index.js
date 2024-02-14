@@ -1,10 +1,8 @@
 import React, { useRef, useEffect, useContext } from 'react'; 
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import {GState} from 'Router/GState';
 
-const CompanySection = ({setObserveEl})=>{
-	const{setCompanyEl} = useContext(GState);
+const CompanySection = ({setObserveEl, setCompEl})=>{
 	const companyWrap = useRef(null);
 	const introItem01 = useRef(null);
 	const introItem02 = useRef(null);
@@ -12,7 +10,7 @@ const CompanySection = ({setObserveEl})=>{
 	let introItemArr;
 
 	useEffect(()=> {
-		setCompanyEl(companyWrap);
+		setCompEl(companyWrap);
 		introItemArr = [introItem01, introItem02, introItem03];
 		
 		setObserveEl((observeEl)=>{
@@ -26,11 +24,6 @@ const CompanySection = ({setObserveEl})=>{
 			});
 			return arrayEl;
 		});
-		
-		return () => {
-			setCompanyEl('');
-		}
-
 	}, []);
 
 	return(
@@ -88,7 +81,8 @@ const CompanySection = ({setObserveEl})=>{
 }
 
 CompanySection.propTypes = {
-	setObserveEl : PropTypes.func.isRequired
+	setObserveEl : PropTypes.func.isRequired,
+	setCompEl : PropTypes.func.isRequired,
 }
 
 export default CompanySection;

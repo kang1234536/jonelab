@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import {GState} from 'Router/GState';
 import History from 'Router/History';
+import GnbMenu from 'Layout/GnbMenu';
 
 const Header = () => {
 	const [gnbActive, setGnbActive] = useState(false);
 	const [isBack, setIsBack] = useState(false);
-	const { pathname } = useLocation();
+	const {setMenu} = useContext(GState);
+	const {scrollToFn} = useContext(GState);
+	const { pathname, state : locaState } = useLocation();
 
 	//GNB OPEN BUTTON FUNCTION
 	const gnbOpenFnc = (e)=>{
@@ -18,6 +22,7 @@ const Header = () => {
 
 	
 	useEffect(() => {
+		setMenu(pathname);
 		const histroyEvt = ()=>{
 			// console.log('뒤로가기 할 때 수행할 동작을 적는다');
 			setIsBack(true);
@@ -29,11 +34,10 @@ const Header = () => {
 			}
 		});
 
-		if(!isBack) {
-			window.scrollTo({
-				top : 0,
-				// behavior : 'smooth',
-			});
+		if(!isBack && locaState == null) {
+			scrollToFn({
+				left : 0,
+			})
 		}
 		
 		return removeHistroyEvt;
