@@ -47,14 +47,15 @@ const Header = () => {
 		<>
 			<header id="header">
 				<div className="headerInner">
-					<Link to="/" className="logo"><img src="/resources/images/common/logo.png" alt="j-one LAB" /></Link>
-					<button type="button" className={gnbActive ? "btnGnbMenu active" : "btnGnbMenu"} onClick={gnbOpenFnc} aria-expanded={gnbActive ? "true" : "false"}></button>
+					<Link to="/*" className="logo"><img src="/resources/images/common/logo.png" alt="j-one LAB" /></Link>
+					<button type="button" className={"btnGnbMenu"} onClick={gnbOpenFnc}><em className={'blind'}>전체메뉴 열기</em></button>
 				</div>
-				<GnbMenu
-					gnbActive={gnbActive}
-					setGnbActive={setGnbActive}
-				/>
 			</header>
+
+			<GnbMenu
+				gnbActive={gnbActive}
+				setGnbActive={setGnbActive}
+			/>
 		</>
 	);
 }

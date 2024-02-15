@@ -28,17 +28,17 @@ const HomePresenter = ()=>{
 	const observer = new IntersectionObserver(callback, options);
 
 	const goSectFn = (sectId)=> {
-		let offsetT;
-		console.log(`sectId == ${sectId}`);
-		console.log(`offsetT == ${offsetT}`);
-		if(sectId == 'company') {
-			console.log('compEl.current.offsetTop ======= ', compEl.current);
-			// offsetT = compEl.current.offsetTop;
-		} else if(sectId == 'work') {
-			console.log('workEl.current.offsetTop ======= ', workEl.current);
-			// offsetT = workEl.current.offsetTop;
+		let offsetT = 0;
+
+		if(sectId === 'company') {
+			console.log('compEl.current ======= ', compEl.current);
+			offsetT = compEl.current.offsetTop - 68;
+		} else if(sectId === 'work') {
+			console.log('workEl.current ======= ', workEl.current);
+			offsetT = workEl.current.offsetTop;
 		}
 
+		if(offsetT === undefined) return;
 
 		scrollToFn({
 			top : offsetT,
@@ -47,10 +47,19 @@ const HomePresenter = ()=>{
 	}
 	
 	useEffect(()=>{
-		if(locaState != null) {
-			goSectFn(locaState['sectId']);
+
+		let goSectTimer;
+		if(locaState !== null && workEl.current !== undefined && compEl.current !== undefined) {
+			goSectTimer = setTimeout(function() {
+				goSectFn(locaState['sectId']);
+			}, 400);
 		}
-	}, [locaState['sectId']]);
+
+		return ()=>{
+			if(goSectTimer) clearTimeout(goSectTimer);
+		}
+
+	}, [locaState, compEl, workEl]);
 	
 	useEffect(()=>{
 		if(observeEl.length) {

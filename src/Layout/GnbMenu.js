@@ -32,6 +32,8 @@ const GnbMenu = ({gnbActive, setGnbActive}) => {
 					</div>
 
 				</div>
+
+				<button type="button" className={gnbActive ? "btnGnbMenu active" : "btnGnbMenu"} onClick={clickDimFnc}><em className={'blind'}>전체메뉴 닫기</em></button>
 			</nav>
 		</>
 	);

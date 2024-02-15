@@ -8,16 +8,16 @@
 #header .headerInner {position:relative;padding:40px 0;}
 #header .logo {display:inline-block;vertical-align:top;}
 #header .logo img {width:120px;}
-#header .btnGnbMenu {position:absolute;right:-10px;top:50%;width:30px;height:30px;transform:translate(0, -50%);z-index:1;}
+#header .btnGnbMenu {position:absolute;right:-10px;top:19px;width:30px;height:30px;z-index:1;}
 #header .btnGnbMenu:before {display:block;content:"";position:absolute;left:50%;top:50%;width:20px;height:2px;border:2px;background-color:#404040;transform:translate(-50%, -3px);transition:transform;transition-duration:.5s;}
 #header .btnGnbMenu:after {display:block;content:"";position:absolute;left:50%;top:50%;width:20px;height:2px;border:2px;background-color:#404040;transform:translate(-50%, 3px);transition:transform;transition-duration:.5s;}
-#header .btnGnbMenu.active:before {transition-timing-function:ease;transform:translate(-50%, 0) rotate(45deg);transform-origin:50% 50%;}
-#header .btnGnbMenu.active:after {transition-timing-function:ease;transform:translate(-50%, 0) rotate(-45deg);transform-origin:50% 50%;}
+/* #header .btnGnbMenu.active:before {transition-timing-function:ease;transform:translate(-50%, 0) rotate(45deg);transform-origin:50% 50%;}
+#header .btnGnbMenu.active:after {transition-timing-function:ease;transform:translate(-50%, 0) rotate(-45deg);transform-origin:50% 50%;} */
 
 /***********************************************************************************************************************************
 	GNB
 ***********************************************************************************************************************************/
-.gnbWrap {visibility:hidden;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);}
+.gnbWrap {visibility:hidden;position:fixed;left:0;top:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.2);z-index:100;}
 .gnbWrap .gnbInner {position:absolute;right:-100%;top:0;bottom:0;box-sizing:border-box;width:50%;padding:124px 0 0 80px;background-color:#fff;transition:right 1s ease;}
 .gnbWrap .gnbInner > ul li {margin:20px 0 0;}
 .gnbWrap .gnbInner > ul li:first-child {margin:0;}
@@ -27,6 +27,12 @@
 .gnbWrap .gnbInner .util .btnBizDown {display:inline-block;line-height:36px;}
 .gnbWrap.active {visibility:visible;}
 .gnbWrap.active .gnbInner {right:0;}
+
+.gnbWrap .btnGnbMenu {position:fixed;right:10px;top:19px;width:30px;height:30px;z-index:1;}
+.gnbWrap .btnGnbMenu:before {display:block;content:"";position:absolute;left:50%;top:50%;width:20px;height:2px;border:2px;background-color:#404040;transform:translate(-50%, -3px);transition:transform;transition-duration:.5s;}
+.gnbWrap .btnGnbMenu:after {display:block;content:"";position:absolute;left:50%;top:50%;width:20px;height:2px;border:2px;background-color:#404040;transform:translate(-50%, 3px);transition:transform;transition-duration:.5s;}
+.gnbWrap .btnGnbMenu.active:before {transition-timing-function:ease;transform:translate(-50%, 0) rotate(45deg);transform-origin:50% 50%;}
+.gnbWrap .btnGnbMenu.active:after {transition-timing-function:ease;transform:translate(-50%, 0) rotate(-45deg);transform-origin:50% 50%;}
 
 /***********************************************************************************************************************************
 	GNB
