@@ -16,8 +16,6 @@ const GStateProvider = ({ children }) => {
 		const scrollY = options.top || 0;
 		const behavior = options.smooth || 'auto';
 
-		console.log(opt);
-
 		window.scrollTo({
 			top : scrollY,
 			left : scrollX,
